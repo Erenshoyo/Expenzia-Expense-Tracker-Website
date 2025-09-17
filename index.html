@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenzia</title>
+
+    <!-- Load Google Fonts first -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind config must be **before** the CDN script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['"Work Sans"', "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans p-8 bg-slate-300">
+    <nav class="flex justify-between bg-white p-5 rounded-3xl items-center">
+      <div class="navTitle flex justify-center items-center gap-4">
+        <img src="logo.svg" alt="logo" class="size-9" />
+        <p>Expenzia: Expense Tracker</p>
+      </div>
+
+      <div class="navListButton flex gap-4 items-center">
+        <div class="navList">
+          <ul class="flex gap-4">
+            <li>Benefits</li>
+            <li>Features</li>
+            <li>How it works</li>
+          </ul>
+        </div>
+        <div class="navButton bg-black p-4 text-white rounded-3xl">
+          <button>Download app</button>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
